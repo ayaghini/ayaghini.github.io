@@ -4,7 +4,7 @@ title:  "#2 EnviroSense, Let's care about the air!"
 date:   2020-09-08 12:42:05 -0700
 categories: IoT
 ---
-![EnviroSense Panel](/assets/#2 envo Panel.jpg)
+![EnviroSense Panel](/assets/#2envoPanel.jpg)
 
 # EnviroSense, an STM 32 Base Environmental Monitoring System
 
