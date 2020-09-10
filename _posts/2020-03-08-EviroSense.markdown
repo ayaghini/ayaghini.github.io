@@ -9,16 +9,25 @@ categories: IoT
 
 # EnviroSense, an STM 32 Base Environmental Monitoring System
 
-I started working on this project back when I was in Edmonton. There was couple of attemts failed because of complexities involved. After COVID-19 I was able to save couple of hours every day not forcing to commute to work which helped me finish this project.
+I started working on this project back when I was in Edmonton. There was couple of attempts failed because of complexities involved. After COVID-19 I was able to save couple of hours every day not forcing to commute to work which helped me finish this project.
 
 The system measures following parameters:
 1. Temperature
 2. Humidity
-3. Barometer presure
+3. Barometer pressure
 4. CO2
 5. PM1.0, PM2.0, and P.M10
 6. Light intensity level
 7. Sound noise level
+
+## My Take
+The PMS7003 was easy to work with somehow reliable results, its physical connection was hard to integrate though and needed some hacks. 
+
+I was surprised by the STM32 power and number of connections, it is not easy to program it but since integration with Arduino IDE it is now much easier and libraries are more accessible. 
+
+The NRF24 is operating at 2.4 GHz and I found them easy to work with thanks to [MySensor](https://www.mysensors.org). Consider advancements such as ESP32, I cannot think of using them in my future projects!
+
+I am planing to keep the station running from my balcony and compare the result with the one of City of North Vancouver air monitoring system.
 
 ## System Architecture
 ![Architect](/assets/img/2system.png)
@@ -28,7 +37,7 @@ The system measures following parameters:
 ![Prototype](/assets/img/2IMG_0882.jpg)
 
 ### BME 280
-BME 280 is a well-known sensor from Bosch. It measures **Temerature, Humidity, and Barometer presure**. 
+BME 280 is a well-known sensor from Bosch. It measures **Temperature, Humidity, and Barometer pressure**. 
 
 Use this page to learn more: 
 [BME280 Guide](http://cactus.io/hookups/sensors/barometric/bme280/hookup-arduino-to-bme280-barometric-pressure-sensor)
@@ -48,7 +57,7 @@ I started the project with one of those cheap microphones.
 First soldering the mic:
 [How to find the polarity of a microphone](http://www.learningaboutelectronics.com/Articles/How-to-determine-the-polarities-of-a-microphone)
 
-Sparkfun has good tutorial on how to read from mic breakout borads: 
+Sparkfun has good tutorial on how to read from mic breakout boards: 
 [Sample code to read from amp](https://learn.sparkfun.com/tutorials/electret-mic-breakout-board-hookup-guide?_ga=2.169232168.860848578.1582503910-1289872436.1523318089)
 
 The next logical question I needed to answer was: **Update: how to translate from sound to noise?**
@@ -56,14 +65,14 @@ The next logical question I needed to answer was: **Update: how to translate fro
 A useful post to answer the question:
 [Sound level meter](https://blog.yavilevich.com/2016/08/arduino-sound-level-meter-and-spectrum-analyzer/)
 
-Plotting the analogue pin output shows small variations in the pin output due sound, that could be related to the mic amplifier, so I chenged my amplifier!
+Plotting the analogue pin output shows small variations in the pin output due sound, that could be related to the mic amplifier, so I changed my amplifier!
 
 ### MIC-MAX9814
 
 This is the module I am using: 
 [MAX9814 with Auto Gain Control](https://www.adafruit.com/product/1713)
 
-It works, now lets move to STM 32:
+It works, now let’s move to STM 32:
 
 For STM I am using Analogue pin (PA1) and this is the code:
 ```
@@ -124,15 +133,16 @@ The PMS7003 is a particle matter counter capable of detecting particulates in th
 A very good point to start: 
 [PMS7003 Arduino Library](https://github.com/jmstriegel/Plantower_PMS7003)
 
-I ended up using the **PMS.h** library as it puts the sensor into sleep. The sensor has a limitted life.
-
+I ended up using the **PMS.h** library as it puts the sensor into sleep. The sensor has a limited life.
 
 A mysensor code [needs to be checked as it is for Arduino]: 
 [MySensors PMS7003](https://github.com/mysensors/MySensorsArduinoExamples/blob/master/examples/PMS-7003%20dust%20sensor)
 
 ## The Brain: STM32F103C8T6 AKA BluePill
 
-As the Arduino  nano and pro only have 1 UART and my air quality sensors both require UART, I am switching to the STM.
+As the Arduino nano and pro only have 1 UART and my air quality sensors both require UART, I am switching to the STM.
 
 A good starting point: [STM32 starting guide](https://circuitdigest.com/microcontroller-projects/getting-started-with-stm32-development-board-stm32f103c8-using-arduino-ide
 )
+
+
