@@ -1,0 +1,108 @@
+---
+layout: post
+title:  "#5 EnvoSense V2, Indoor Air Quality Monitoring [MISC-6814, Dallas DS18820, and SHARP Dust Sensor]."
+date:   2020-03-19 12:42:05 -0700
+categories: IoT
+---
+
+![EnvoSense V2](/assets/img/5EnvoDevice.png)
+
+## Introduction
+
+This project aims to automate and enhance the process of minitoring indoor air quality. The following parameters re monitored, stored and being transfered to my server:
+1. Temperature
+2. Carbon monoxide CO
+3. Nitrogen dioxide NO2 
+4. Ethanol C2H6OH 
+5. Hydrogen H2
+6. Ammonia NH3
+7. Methane CH4
+8. Propane C3H8 
+9. Iso-butane C4H10 
+10. PM1.0, PM2.5, and PM10
+
+I am using the same architecture as the post #1. The NRF24 is used for the data transfer to my Gateway. 
+
+## Sensors
+## Sharp GP2Y1010AU0F Dust Sensor
+This is an optical air quality sensor, with an analog output proportional to the measured dust density, with a sensitivity of 0.5V/0.1mg/m3.
+
+*Below is a code I borrowed from the URL in the comment section, all credits go to authors.*
+
+
+```
+/*
+ Standalone Sketch to use with a Arduino Fio and a
+ Sharp Optical Dust Sensor GP2Y1010AU0F
+  Blog: http://arduinodev.woofex.net/2012/12/01/standalone-sharp-dust-sensor/
+ Code: https://github.com/Trefex/arduino-airquality/
+  For Pin connections, please check the Blog or the github project page
+ Authors: Cyrille Médard de Chardon (serialC), Christophe Trefois (Trefex)
+ Changelog:
+   2012-Dec-01:  Cleaned up code
+  This work is licensed under the
+ Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+ To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/
+ or send a letter to Creative Commons, 444 Castro Street, Suite 900,
+ Mountain View, California, 94041, USA.
+*/
+ int measurePin = A0;
+int ledPower = 12;
+ 
+int samplingTime = 280;
+int deltaTime = 40;
+int sleepTime = 9680;
+ 
+float voMeasured = 0;
+float calcVoltage = 0;
+float dustDensity = 0;
+ 
+void setup(){
+  Serial.begin(9600);
+  pinMode(ledPower,OUTPUT);
+}
+ 
+void loop(){
+  digitalWrite(ledPower,LOW); // power on the LED
+  delayMicroseconds(samplingTime);
+ 
+  voMeasured = analogRead(measurePin); // read the dust value
+ 
+  delayMicroseconds(deltaTime);
+  digitalWrite(ledPower,HIGH); // turn the LED off
+  delayMicroseconds(sleepTime);
+ 
+  // 0 - 3.3V mapped to 0 - 1023 integer values
+  // recover voltage
+  calcVoltage = voMeasured * (3.3 / 1024);
+ 
+  // linear eqaution taken from http://www.howmuchsnow.com/arduino/airquality/
+  // Chris Nafis (c) 2012
+  dustDensity = 0.17 * calcVoltage - 0.1;
+ 
+  Serial.print("Raw Signal Value (0-1023): ");
+  Serial.print(voMeasured);
+ 
+  Serial.print(" - Voltage: ");
+  Serial.print(calcVoltage);
+ 
+  Serial.print(" - Dust Density: ");
+  Serial.println(dustDensity);
+ 
+  delay(1000);
+}
+```
+
+## MICS-6814
+This is a compact MEMS sensor with three independent sensing elements on one package.
+
+You can find the datasheet here: [MISC-6814](https://www.sgxsensortech.com/content/uploads/2015/02/1143_Datasheet-MiCS-6814-rev-8.pdf)
+
+and to learn more about how to work with this sensor: [MISC-6814 Project](http://kstobbe.dk/2019/02/16/esp32-pms5003-bme280-mics6814-sensor-build/)
+
+## Dallas DS18820
+
+This is a famouse temperature sensor. Please have a look at Arduino project here: [DS18820 Project](https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806)
+
+## 10 Segments LED
+To provide user with some sort of visual feedback, I decided to use one of these 10 segments LEDs I had around for ages.

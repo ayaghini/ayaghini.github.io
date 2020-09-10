@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "#2 EnviroSense, Let's care about the air!"
-date:   2020-09-08 12:42:05 -0700
+date:   2020-03-08 12:42:05 -0700
 categories: IoT
 ---
-![EnviroSense Panel](/assets/#2envoPanel.jpg)
+
+![EnviroSense Panel](/assets/img/2envoPanel.jpg)
 
 # EnviroSense, an STM 32 Base Environmental Monitoring System
 
@@ -14,9 +15,18 @@ The system measures following parameters:
 1. Temperature
 2. Humidity
 3. Barometer presure
+4. CO2
+5. PM1.0, PM2.0, and P.M10
+6. Light intensity level
+7. Sound noise level
 
+## System Architecture
+![Architect](/assets/img/2system.png)
 
 ## Sensors
+
+![Prototype](/assets/img/2IMG_0882.jpg)
+
 ### BME 280
 BME 280 is a well-known sensor from Bosch. It measures **Temerature, Humidity, and Barometer presure**. 
 
