@@ -9,7 +9,7 @@ categories: IoT
 
 ## Introduction
 
-This project aims to automate and enhance the process of minitoring indoor air quality. The following parameters re monitored, stored and being transfered to my server:
+This project aims to automate and enhance the process of monitoring indoor air quality. The following parameters re monitored, stored and being transferred to my server:
 1. Temperature
 2. Carbon monoxide CO
 3. Nitrogen dioxide NO2 
@@ -23,12 +23,23 @@ This project aims to automate and enhance the process of minitoring indoor air q
 
 I am using the same architecture as the post #1. The NRF24 is used for the data transfer to my Gateway. 
 
+## My Take
+
+I found the **Sharp** sensor easy to integrate but not very accurate, a reason could be the fact that mine didn’t come with a fan to circulate the air within the sensor optic, one needs to investigate it.
+
+**Misc-6814** is a typical MEMS sensor that can detect the presence of multiple gases and the shortcoming is that it cannot tell you which gas. The sensor also needs calibration. 
+
+**Dallas ds18820** is amazing, whether it needs some calibration would be my question!
+
+The **Arduino pro mini** is performing very well!
+
+last but certainly not least, the **10 segments LED** is very useful and also easy to implement using the **74HC595**, I was lucky to have couple of those around! 
+
 ## Sensors
 ## Sharp GP2Y1010AU0F Dust Sensor
 This is an optical air quality sensor, with an analog output proportional to the measured dust density, with a sensitivity of 0.5V/0.1mg/m3.
 
 *Below is a code I borrowed from the URL in the comment section, all credits go to authors.*
-
 
 ```
 /*
@@ -102,7 +113,11 @@ and to learn more about how to work with this sensor: [MISC-6814 Project](http:/
 
 ## Dallas DS18820
 
-This is a famouse temperature sensor. Please have a look at Arduino project here: [DS18820 Project](https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806)
+This is a famous temperature sensor. Please have a look at Arduino project here: [DS18820 Project](https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806)
 
 ## 10 Segments LED
-To provide user with some sort of visual feedback, I decided to use one of these 10 segments LEDs I had around for ages.
+To provide user with some sort of visual feedback, I decided to use one of these 10 segments LEDs I had around for ages. 
+
+To use them I needed to use **74HC595 - Serial to Parallel Converter**. Adafruit has a great tutorial: [Adafruit Shift Register](https://learn.adafruit.com/adafruit-arduino-lesson-4-eight-leds/overview)
+
+

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "#3 Antennas, How tuned they are?"
+title:  "#3 Antennas, how tuned they are?"
 date:   2020-03-12 12:42:05 -0700
 categories: IoT
 ---
 
-## Introduction
+## My Take
 
 ![Before Tuning](/assets/img/3before.png)
 
@@ -14,3 +14,6 @@ One of my biggest challenges when I am working with wireless communication proje
 The Lora operates at 915MHz and as you can clearly see the antenna is optimized for a lower frequency. What I had to do was to solder some wire on top of the antenna and then cut them to get to the exact 915.
 
 ![After Tuning](/assets/img/3after.png)
+
+I found the **PS100** (some call it VNA) a good entry point for beginners and I was able to optimize many of antennas that were far beyond acceptable level. 
+

@@ -7,4 +7,6 @@ categories: jekyll update
 
 # I love photography!
 
-Why not kick off this website with a photo!
+Why not kick off this website with a photo [I will keep this post updated with the recent one that I fall in love with]!
+
+![Osoyoos 2020](/assets/img/1pic.jpg)
