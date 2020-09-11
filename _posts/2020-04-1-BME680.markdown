@@ -4,7 +4,7 @@ title:  "#6 BOSCH BME680, AQI an Industrial Approach to Air Quality and IoT."
 date:   2020-04-1 12:42:05 -0700
 categories: IoT
 ---
-![BME680](/assets/img/6boschweb.jpg)
+![BME680](/assets/img/6boschWeb.JPEG)
 # My Take:
 I came across Bosch BME680 when I was searching for my EnvoSense project. The idea was promising! an Air Quality Index. I bought couple of [those modules](https://www.adafruit.com/product/3660) and started experimenting.
 
