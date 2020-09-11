@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "#6 BOSCH BME680, AQI an Industrial Approach to Air Quality and IoT."
+date:   2020-04-1 12:42:05 -0700
+categories: IoT
+---
+![BME680](/assets/img/6boschweb.png)
+# My Take:
+I came across Bosch BME680 when I was searching for my EnvoSense project. The idea was promising! an Air Quality Index. I bought couple of [those modules](https://www.adafruit.com/product/3660) and started experimenting.
+
+## The Sensor
+I would call it a new generation of successful BME280! The BME-680 can measure relative humidity, barometric pressure, ambient temperature and gas (VOC).
+
+## The library
+There are two ways to work with this sensor, first you can read the raw data, Nothing Extraordinary here! and there is no AQI too!
+
+The second approach is to use Bosch proprietary API and code [BSCE](https://github.com/BoschSensortec/BSEC-Arduino-library). There are couple of catches here though. First, it only works with higher end microprocessors such as esp82 and esp32 and the fact that it is proprietary will makes me harder to believe that it will be made compatible to other boards by the maker community, everything will be in hands of BOSCH developer team!
+
+The next is getting the library to work, I had to spend couple of hours finding part of esp board manager files I had to change get the BSCE work, and it was only when I wanted to upload a new sketch couple of days later that I realized I have to repeat every step again as I just updated my esp board in Arduino board manager!
+
+I must say that the BOSCH ["community forum"](https://community.bosch-sensortec.com/t5/Bosch-Sensortec-Community/ct-p/bst_community) is very helpful to get answer to your questions, most of the post I read was answered by the developer team and I was surprised to see the extent of their engagement.
+
+## The Result
+**AQI**, a brilliant idea from a tech giant that has realized where the future will be and trying to be a player! 
+
+I most certainly welcome their effort and if only they could open source they would have probably seen a more positive collaboration from the maker community that would ultimately help them make their portion of the market bigger!
+
+I will share my office air quality monitoring system based on BME680 later!
+
