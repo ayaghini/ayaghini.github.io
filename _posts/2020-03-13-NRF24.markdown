@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  "#4 NRF24, Extening the range."
+title:  "#4 NRF24, Mesh Network, MQTT and Extending the Range."
 date:   2020-03-13 12:42:05 -0700
 categories: IoT
 ---
+# The Module
+NRF24 is a very cheap 2.4 GHz wireless module. Thanks to its reliability and price point it is very common for applications wanted to stay within ISM and not use regular Wi-Fi.
 
-NRF24 is a very cheap 2.4 GHz wireless module. Thanks to its reliability and price point it is very common for applications wanted to stay within ISM and not use regular Wi-Fi. 
+# MySensors
+[MySensors]( https://www.mysensors.org) is an open-source hardware and software project built mainly to leverage these little devises and ease the complexities involved in DIY home automation and IoT projects. I found MySensors well-structured and documented and also their support forum exceptionally helpful. 
 
+One of their biggest advantages comes from the fact that as soon as you built your **gateway** you can add as many nodes as you want easily. Nodes will have their number and every information will be tagged with that. 
+
+Based on the fact that they use **MQTT** in the backend, the messaging is easy to parse, and data well structured. Thanks to their maker community it was easy for me to find the **Node-Red** parser. Here comes another great point, the parser you can easily modify so in feature no matter what sensor you add to your network, its data could safely be transfer to its dedicated destination.
+
+# Antenna, antenna, antenna..
 I had many difficulties connecting my sensors and nodes to the gateway and I was getting ranges no more than 2-3 meter. Using the fix below helped:
 [Enhanced NRF24](https://www.instructables.com/id/Enhanced-NRF24L01/)
 
 In summary, the problem comes from the module antenna design and the fix just modify it. There are some NRF24 modules that you can connect external antenna and my test confirmed they are much better! 
 
-You might be interested to check my post #3 to make sure the antenna is comply with its intended frequency.
+You might be interested to check my post #3 to make sure the antenna is complying with its intended frequency.
+
