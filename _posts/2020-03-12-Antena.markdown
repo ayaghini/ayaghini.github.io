@@ -4,10 +4,10 @@ title:  "#3 Antennas, how tuned are they?"
 date:   2020-03-12 12:42:05 -0700
 categories: IoT
 ---
+![Before Tuning](/assets/img/3before.png)
 
 ## My Take
 
-![Before Tuning](/assets/img/3before.png)
 
 One of my biggest challenges when I am working with wireless communication projects is to reach the expected range. If you have the same problem, I recommend you read more about dBm and dBi and RSSI. Above is the picture from an antenna I wanted to use for my LoRa Tracker. 
 
