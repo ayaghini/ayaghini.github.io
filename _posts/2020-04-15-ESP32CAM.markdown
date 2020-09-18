@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "#11 Smallest IoT enabled Camera, ESP32-CAM"
+date:   2020-04-15 12:42:05 -0700
+categories: IoT
+---
+![ESP32-CAM](/assets/img/11camShot.PNG)
+
+# Intro
+
+When it comes to camera, I have been a big-time fan of **Raspberry Pi Cameras**. They are less than $5 if you get them from our friends in China and have a decent image quality (I am talking about ver. 1). 
+
+Recently I purchased couple of **ESP32-CAM** modules while I was shipping for something else (these days you can save on shipping if you buy all you can think of, maybe later we find a use for them!!).
+
+![ESP32-CAM Module](/assets/img/11ESP32-CAM.JPG)
+Image credit: [randomnerdtutorials.com](https://randomnerdtutorials.com/esp32-cam-troubleshooting-guide/)
+
+Seems like they have all you can ask for:
+- ESP32 as the processor
+- A tf slot card reader
+- wi-fi enabled
+- BLE
+- and even a small flash!
+
+As you expected, they are also cheap (I got them for $6 CAD). 
+
+I got them a shot today and found them super easy to work with, the image quality is not impressive but please look at the form factor and price, can you complain? 
+
+I already have couple of use for them in my projects and will keep them in my reach for near future!
+
+
