@@ -4,7 +4,7 @@ title:  "#11 Smallest IoT enabled Camera, ESP32-CAM"
 date:   2020-04-15 12:42:05 -0700
 categories: IoT
 ---
-![ESP32-CAM](/assets/img/11camShot.PNG)
+![ESP32-CAM](/assets/img/11camShot1.PNG)
 
 # Intro
 
@@ -12,7 +12,7 @@ When it comes to camera, I have been a big-time fan of **Raspberry Pi Cameras**.
 
 Recently I purchased couple of **ESP32-CAM** modules while I was shipping for something else (these days you can save on shipping if you buy all you can think of, maybe later we find a use for them!!).
 
-![ESP32-CAM Module](/assets/img/11ESP32-CAM.JPG)
+![ESP32-CAM Module](/assets/img/11ESP32-CAM1.JPG)
 Image credit: [randomnerdtutorials.com](https://randomnerdtutorials.com/esp32-cam-troubleshooting-guide/)
 
 Seems like they have all you can ask for:
