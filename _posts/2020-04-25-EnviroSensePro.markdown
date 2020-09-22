@@ -37,3 +37,9 @@ Device general specifications are as below:
 
 I have ordered the board from [JLCPCB](https://jlcpcb.com) and waiting for its delivery! I will update this post as soon as I commission the trial.
 
+# SPS30
+![SPS30 Serial output](/assets/img/12Dust.PNG)
+
+
+# SCD30
+![SCD30 Serial output](/assets/img/12co2.PNG)
