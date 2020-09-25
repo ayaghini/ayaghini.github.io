@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "#13 EnviroSense Pico, ESP8255, Bosch BME680 and 0.96 TFT"
+title:  "#13 EnviroSense Pico; ESP8255, Bosch BME680 and 0.96 TFT"
 date:   2020-04-29 12:42:05 -0700
 categories: IoT
+tags: ESP8266 Bosch BME680 TFT 160x80 Arduino Environment Monitoring
 ---
 ![EnviroSense Pico](/assets/img/13Pico2.JPG)
 
