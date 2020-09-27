@@ -3,7 +3,7 @@ layout: post
 title:  "#13 EnviroSense Pico; ESP8255, Bosch BME680 and 0.96 TFT"
 date:   2020-04-29 12:42:05 -0700
 categories: IoT
-tags: ESP8266 Bosch BME680 TFT 160x80 Arduino Environment Monitoring
+tags: [ESP8266, Bosch BME680, TFT 160x80, Arduino, Environment Monitoring]
 ---
 ![EnviroSense Pico](/assets/img/13Pico2.JPG)
 
@@ -38,7 +38,7 @@ I am using **[WEMOS D1 mini](https://docs.wemos.cc/en/latest/d1/d1_mini.html)**,
 
 I am also using a recycled 3.6v battery so the board is powered up through the 3.3 pin. Look at the picture below to see how well designed this board in terms of giving the user power management options.
 
-![BME680 accuracy test results](/assets/img/13esp8266.PNG)
+![BME680 accuracy test results](/assets/img/13esp8266.PNG) *Image credit: [diyi0t.com](https://diyi0t.com/what-is-the-esp8266-pinout-for-different-boards/)*
 
 # 0.96" 80x160 RGB IPS TFT Display
 
