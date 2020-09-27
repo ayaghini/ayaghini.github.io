@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#12 EnviroSense Pro, SENSIRION SCD30 and SPS30"
+title:  "#12 EnviroSense Pro; SENSIRION SCD30 and SPS30"
 date:   2020-04-25 12:42:05 -0700
 categories: IoT
 ---
