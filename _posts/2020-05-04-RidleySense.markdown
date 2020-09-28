@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "#14 Real-time FEM Based Machine Structural Health Monitoring; RidleySense v1.0"
+title:  "#14 Real-time FEA Based Machine Structural Health Monitoring; RidleySense v1.0"
 date:   2020-05-04 12:42:05 -0700
 categories: IoT Mining
-tags: [FEM, Health Monitoring, Structural Analysis, ESP32, IMU, MPU9255, Arduino, whole body vibration]
+tags: [FEA, Health Monitoring, Structural Analysis, ESP32, IMU, MPU9255, Arduino, whole body vibration]
 ---
 ![RidleySense v1.0](/assets/img/14Graphs.PNG)
 
@@ -11,7 +11,7 @@ tags: [FEM, Health Monitoring, Structural Analysis, ESP32, IMU, MPU9255, Arduino
 
 This project was initiated from a friend of mine Dr. Charles Constancon asking for a device that can measure stress and strain in structural elements of a mining equipment. 
 
-Critically spread across key structural elements of the machine and fed into a live FEM model, the project aims at prolonging giant mining equipment Lifetime by continues monitoring of their status and triggering ML based notification to prevent excessive use and load.
+Critically spread across key structural elements of the machine and fed into a live FEA model, the project aims at prolonging giant mining equipment Lifetime by continues monitoring of their status and triggering ML based notification to prevent excessive use and load.
 
 The device measures, records and publishes following parameters:
 - acceleration in X, Y, and Z
@@ -62,7 +62,7 @@ All data are stored in InfluxDB. I found InfluxDB reliable, light and practical.
 And, the final part for the first stage is the Grafana that takes care of visual presentation of the sensor data in real-time
 
 # Next
-In terms of the software, the FEM model still needs to be developed, for the visualization, based on my experience, Unity 3D will be the choice.
+In terms of the software, the FEA model still needs to be developed, for the visualization, based on my experience, Unity 3D will be the choice.
 
 For the hardware, I will be using the Bosch sensor!
 

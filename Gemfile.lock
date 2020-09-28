@@ -34,7 +34,7 @@ GEM
     crass (1.0.6)
     dnsruby (1.61.4)
       simpleidn (~> 0.1)
-    em-websocket (0.5.1)
+    em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubi (1.9.0)
@@ -139,6 +139,8 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-include-cache (0.2.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-mentions (1.5.1)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
@@ -230,6 +232,13 @@ GEM
     minimal (0.0.26)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    minimal-mistakes-jekyll (4.20.2)
+      jekyll (>= 3.7, < 5.0)
+      jekyll-feed (~> 0.1)
+      jekyll-gist (~> 1.5)
+      jekyll-include-cache (~> 0.1)
+      jekyll-paginate (~> 1.1)
+      jekyll-sitemap (~> 1.3)
     minitest (5.14.2)
     multipart-post (2.1.1)
     nokogiri (1.10.10)
@@ -290,6 +299,7 @@ DEPENDENCIES
   jekyll-paginate
   minima (~> 2.5)
   minimal
+  minimal-mistakes-jekyll
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

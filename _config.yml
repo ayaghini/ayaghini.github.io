@@ -51,8 +51,6 @@ footer_links:
     url: https://github.com/AYaghini
     icon: fab fa-github-square
   
-
-
 plugins:
   - jekyll-feed
   - jekyll-archives
@@ -69,6 +67,7 @@ jekyll-archives:
 paginate: 10  # amount of posts to show per page
 paginate_path: /page:num/
 
+#theme: minimal-mistakes-jekyll
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
