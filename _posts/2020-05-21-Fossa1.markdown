@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "#16 First Received Packet from Space; Norby Satellite"
+date:   2020-05-21 12:42:05 -0700
+categories: IoT Mining
+tags: [Ground Station, Fossa sat, Norbi sat, ESP32, LoRa 433MHz]
+---
+![Fossa Sat Ground Station](/assets/img/16helteck.PNG)
+
+# Intro
+Communicating with space and having a ground station is fascinating enough for me to spend some time on and give it a shot, being open-source and getting to work with many people across the world is completely another story.
+
+**[Fossa](https://fossa.systems)** project initiated by an amateur space technology enthusiasm last year in Spain. Their first lunch was successful, but the satellite could not deploy the antenna and hence only few people across the globe were able to receive packets from it using specialized high gain antennas. 
+
+The key here is that they are using ***LoRa*** technology for the communication which makes receiving them more accessible for the *maker* community, and did I already mention that they have made the project *open source* (at least for now!).
+
+![Fossa Sat-1](/assets/img/16FossaSat.jpg) *Credit: [Fossa](https://fossa.systems/gallery/)*
+
+## Update
+While everyone is waiting for them to lunch the second satellite, Norbi (also transcribed Norby) a Russian 3U CubeSat built by the Novosibirsk State University was lunched a month ago that uses the same frequency band as Fossa, this is a good news that we can use and test our ground stations. 
+
+Setting up the ground station was not straightforward as many libraries were used with specific version and ***PlatformIO*** did not collaborate much, couple of hours of debugging and done!
+
+After couple of failed attempts mainly because of the antenna, using my VNA explained in my *Antenna* post, I was able to receive my first packet.
+
+![Fossa Sat-1](/assets/img/16norbi_Communication.jpg) 
+

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#15 Real-time Road Condition Monitoring; RoadSense v1.0"
-date:   2020-05-04 12:42:05 -0700
+date:   2020-05-14 12:42:05 -0700
 categories: IoT Mining
 tags: [Road Condition Monitoring, LoRa SX1262, E22M900, ESP32, IMU, MPU9255, Arduino, whole body vibration]
 ---
