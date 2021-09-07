@@ -19,7 +19,7 @@ As a civil engineer with 15+ years of experience with ***AutoCAD***, naturally I
 
 Structural drawing once amazed me, and this time it was CAD drawing that had me excited. The shear number of concepts and ideas involved in the journey of the design and manufacturing a functional part is intriguing to me. 
 
-But at the end you cannot name yourself a product development if you cannot see a product from **schematic** all the way to a finished product with an enclosure.
+But at the end you cannot name yourself a product developer if you cannot see a product from **schematic** all the way to a finished product with an enclosure.
 
 ## PRUSA MINI+
 
