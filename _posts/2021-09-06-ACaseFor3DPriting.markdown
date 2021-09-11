@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#19 CAD Design and 3D Printing; SOLIDWORKS and Prusa MINI+"
+title:  "#20 A case for 3D Printing; SOLIDWORKS and Prusa MINI+"
 date:   2021-09-06 12:42:05 -0700
 categories: IoT
 tags: [DIY, 3D Print, PRUSA MINI+, SolidWorks, Autodesk Fusion 360]
@@ -8,9 +8,9 @@ tags: [DIY, 3D Print, PRUSA MINI+, SolidWorks, Autodesk Fusion 360]
 ![Temp Calibrator](/assets/img/19Pursa.JPEG)
 
 # Intro
-As soon as you are done building your first design/PCB/device you realize that it needs a home or box or enclosure to sit in. I have been playing with DIY boxes from stores such as Michel’s, IKEA and even repurposing some other devices' enclosures for my projects for a while.
+As soon as you are done assembelling your first design/PCB/device you realize that it needs a home, box or an enclosure to sit in. I have been playing with DIY boxes from stores such as Michel’s, IKEA and even repurposing some other devices' enclosures for my projects.
 
-The main reason has been my personal time management as I did not find a big chunk of time, I could devote to build the skills needed to start CAD manufacturing, until last couple of months that I have been exposed to two major design software: **Autodesk Fusion 360** and **SolidWorks**.
+The main reason has been my personal time management as I did not find a big chunk of time I could devote to build the skills needed to start CAD manufacturing, until last couple of months that I have been exposed to two major design software: **Autodesk Fusion 360** and **SolidWorks**.
 
 As a civil engineer with 15+ years of experience with ***AutoCAD***, naturally I started with the Fusion 360 but quickly realized that SolidWorks has been around for ages and that could be why it is the first choice among engineers in many industries. 
 
