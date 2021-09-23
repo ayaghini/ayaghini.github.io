@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#19 SOLIDWORKS and CAD Design in the Product Development workflow"
+title:  "#21 SOLIDWORKS and CAD Design in the Product Development workflow"
 date:   2021-08-26 12:42:05 -0700
 categories: IoT
 tags: [Product Development, Workflow, SOLIDWORKS, CAD Design]
@@ -17,3 +17,9 @@ It is critical to visually check the alignment of I/O ports and any other mounta
 
 
 An enclosure usually has many bits and pieces that without a proper CAD design and modeling it would be very easy to make a mistake. Also, there are aspects of a product such as port accessibility and arrangement, LED and user feedback layout, and in our industry case (i.e., ***MINING***) mounting in a harsh environment etc. that a CAD simulator software is invaluable.
+
+
+
+
+
+
