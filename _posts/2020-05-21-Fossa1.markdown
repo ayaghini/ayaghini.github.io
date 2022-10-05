@@ -2,7 +2,7 @@
 layout: post
 title:  "#16 First Received Packet from Space; Norby Satellite"
 date:   2020-05-21 12:42:05 -0700
-categories: IoT Mining
+categories: [IoT, Mining]
 tags: [Ground Station, Fossa sat, Norbi sat, ESP32, LoRa 433MHz]
 ---
 ![Fossa Sat Ground Station](/assets/img/16helteck.PNG)

@@ -14,6 +14,6 @@ Hence, monitoring their condition becomes more important as not only the product
 
 In mining, the heavy weight of trucks collectively with the weather condition causes roads condition to deteriorate very quickly, and early detection of those could help reduce the road and also equipment maintenance costs.
 
-**RoadSense** is the newest member of my **IoT** based family of connected sensors' family. It comprises of a 9-degree of freedom IMU sensor from *Bosch* and a 55-Channel **GPS** from *u-Blox*. For remote locations with limited wi-fi coverage, I am adding the **LoRa SX1262** with 100k+ range. 
+**RoadSense** is the newest member of my **IoT** based family of connected sensors' family. It comprises of a 9-degree of freedom IMU sensor from *Bosch* and a 55-Channel **GPS** from *u-Blox*. For remote locations with limited wi-fi coverage, I am adding the **LoRa SX1262** with 100km+ range. 
 
 

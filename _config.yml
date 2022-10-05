@@ -58,10 +58,12 @@ plugins:
 
 jekyll-archives:
   enabled: 
-    categories
-  layout: archive
+    - categories
+    - tags
+  #layout: archive
+  layout: categories
   permalinks:
-    tag: '"/categories/tag/:name/'
+    tag: '/categories/tag/:name/'
     category: '/:name/'
 
 paginate: 10  # amount of posts to show per page
