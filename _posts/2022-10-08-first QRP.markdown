@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "#45 First QRP"
+date: 2022-10-08 12:42:05 -0700
+categories: HAM
+tags: [ICOM IC-705, EFHW Antenna, HAM Radio]
+---
+![QRp at Deep Cove](/assets/img/45QRP.png)
+
+# Intro
+This was my first time trying to setup antenna and station in field and I must admit it was such a joy doing so. I went minimal but well planned and with adequate tools. I found a nice spot close to water with a tree close by that I could use to throw my antenna.
+
+Wonderful experience!
+

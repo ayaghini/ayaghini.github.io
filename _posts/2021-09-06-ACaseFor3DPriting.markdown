@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#22 A case for 3D Printing; Fusion 360 and Prusa MINI+"
+title:  "#22 3D Printing; Fusion 360 and Prusa MINI+"
 date:   2021-09-06 12:42:05 -0700
 categories: IoT
 tags: [DIY, 3D Print, PRUSA MINI+, SolidWorks, Autodesk Fusion 360]
