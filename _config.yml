@@ -67,7 +67,7 @@ jekyll-archives:
     tag: '/categories/tag/:name/'
     category: '/:name/'
 
-paginate: 10  # amount of posts to show per page
+paginate: 20  # amount of posts to show per page
 paginate_path: /page:num/
 
 #theme: minimal-mistakes-jekyll
