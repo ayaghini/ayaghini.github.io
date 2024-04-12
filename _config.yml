@@ -64,8 +64,11 @@ jekyll-archives:
   #layout: archive
   layout: categories
   permalinks:
-    tag: '/categories/tag/:name/'
-    category: '/:name/'
+  tag: '/tag/:name/'  # Optional: Consider simplifying
+  category: '/category/:name/'
+  # permalinks:
+  #   tag: '/categories/tag/:name/'
+  #   category: '/:name/'
 
 paginate: 20  # amount of posts to show per page
 paginate_path: /page:num/
